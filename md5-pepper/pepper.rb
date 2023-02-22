@@ -1,1 +1,1 @@
-require'digest';a,b=IO.read('a').split();[*?A..?z].map{|i|puts i if(Digest::MD5.hexdigest a+i)==b}
+require'digest';a,b=IO.read(?a).split;?A.upto(?z){|i|Digest::MD5.hexdigest(a+i)==b&&puts(i)}
